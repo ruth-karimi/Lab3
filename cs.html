@@ -11,9 +11,31 @@
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+        <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+  
 
         <!-- Custom styles for this template -->
         <link href="css/simple-sidebar.css" rel="stylesheet">
+        <script>
+            var userAgent = navigator.userAgent + '';
+            if (userAgent.indexOf('iPhone') > -1) {
+              document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+              var mobile_system = 'iphone';
+            } else if (userAgent.indexOf('Android') > -1) {
+              document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+              var mobile_system = 'android';
+            } else {
+              var mobile_system = '';
+            }
+          </script>
+          <!-- your scripts here -->
+      <script src="js/app/app.js"></script>
+      <script src="js/app/bootstrap.js"></script>
+      <script src="js/lib/jquery.mobile.js"></script>
+      
     </head>
     <body>
         <div style="width: 100%;height: 50px; background-color:navy">
@@ -59,7 +81,8 @@
                     <code>LEARNING GOALS</code>
                     <p>1.Ethics and Civic Engagement</br>2.Communication</br>3.Leadership and Teamwork</br>4.Professionalism</br>5.Curiosity and Skil</p>
 
-           <footer class="footer">
+          <footer class="footer">
+                <div style="background-color:navy">
                 <center>
                 <div class="container">
                 <span class="text-muted"> <p>©Ashesi University College. All rights reserved.</p>
@@ -72,9 +95,9 @@
                     <p>Site Map<p></span>
                 </div>
                 </center>
+                </div>
             </footer>
             </div>
-        </div>
         <!-- /#wrapper -->
         </div>
         <!-- Bootstrap core JavaScript -->
